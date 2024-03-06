@@ -1,0 +1,77 @@
+.required,
+.title {
+  position: relative;
+  line-height: 100%;
+}
+.required {
+  width: 64px;
+  color: var(--color-crimson);
+  display: inline-block;
+}
+.label {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  row-gap: 20px;
+}
+.errormessage,
+.placeholder {
+  width: 112px;
+  position: relative;
+  line-height: 100%;
+  display: none;
+}
+.placeholder {
+  width: 100%;
+  border: 0;
+  outline: 0;
+  font-family: var(--font-noto-sans-jp);
+  font-size: var(--font-size-base);
+  background-color: transparent;
+  height: 16px;
+  flex: 1;
+  color: var(--color-darkgray);
+  text-align: left;
+  display: inline-block;
+  min-width: 250px;
+  max-width: 100%;
+}
+.content,
+.form,
+.input {
+  align-self: stretch;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  max-width: 100%;
+}
+.input {
+  border-radius: var(--br-5xs);
+  background-color: var(--color-white);
+  border: 1px solid var(--color-darkgray);
+  box-sizing: border-box;
+  flex-direction: row;
+  padding: var(--padding-2xs) var(--padding-xs) var(--padding-2xs)
+    var(--padding-3xs);
+}
+.content,
+.form {
+  flex-direction: column;
+  gap: 8px 0;
+  color: var(--color-crimson);
+}
+.form {
+  gap: 16px 0;
+  text-align: left;
+  font-size: var(--font-size-base);
+  color: var(--color-black);
+  font-family: var(--font-noto-sans-jp);
+}
+@media screen and (max-width: 450px) {
+  .label {
+    flex-wrap: wrap;
+  }
+}
+
